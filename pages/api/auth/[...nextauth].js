@@ -17,6 +17,8 @@ export default NextAuth({
       },
     }),
   ],
+  secret: process.env.SECRET,
+
   // jwt: {
   //   encryption: true
   // },
