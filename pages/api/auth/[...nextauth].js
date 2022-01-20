@@ -1,22 +1,21 @@
-import NextAuth from "next-auth"
+import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 export default NextAuth({
   // Configure one or more authentication providers
-    providers: [
-      GoogleProvider({
-        clientId: process.env.GOOGLE_ID,
-        clientSecret: process.env.GOOGLE_SECRET,
-        // authorizationUrl:
-        //   "https://accounts.google.com/o/oauth2/v2/auth?prompt=consent&access_type=offline&response_type=code",
-        authorization: {
-          params: {
-            prompt: "consent",
-            access_type: "offline",
-            response_type: "code"
-          }
-        }
-        
-      }),
+  providers: [
+    GoogleProvider({
+      clientId: process.env.GOOGLE_ID,
+      clientSecret: process.env.GOOGLE_SECRET,
+      // authorizationUrl:
+      //   "https://accounts.google.com/o/oauth2/v2/auth?prompt=consent&access_type=offline&response_type=code",
+      authorization: {
+        params: {
+          prompt: "consent",
+          access_type: "offline",
+          response_type: "code",
+        },
+      },
+    }),
   ],
   // jwt: {
   //   encryption: true
@@ -36,8 +35,7 @@ export default NextAuth({
   //       return  Promise.resolve('/')
   //     }
   // }
-  
- 
+
   //   callbacks: {
   //     async signIn({ account, profile }) {
   //       if (account.provider === "google") {
@@ -46,8 +44,4 @@ export default NextAuth({
   //       return true // Do different verification for other providers that don't have `email_verified`
   //     },
   // }
-    
- 
-  
-
-  });
+});
