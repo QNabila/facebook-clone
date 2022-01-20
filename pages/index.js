@@ -5,7 +5,7 @@ import Login from "../components/Login";
 import Sidebar from "../components/Sidebar";
 import { getSession } from "next-auth/react";
 import Feed from "../components/Feed";
-import Widgets from "../components/widgets";
+import Widgets from "../components/Widgets";
 import { db } from "../firebase";
 
 
