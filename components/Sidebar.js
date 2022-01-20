@@ -8,7 +8,7 @@ import {
     UsersIcon
   } from "@heroicons/react/solid";
   import {
-    ChevronDownICon,
+    ChevronDownIcon,
     ShoppingBagIcon,
     UserGroupIcon,s
 } from "@heroicons/react/outline";
@@ -25,7 +25,7 @@ const Sidebar = () => {
             <SidebarRow Icon={DesktopComputerIcon} title="Watch"/>
             <SidebarRow Icon={CalendarIcon} title="Events"/>
             <SidebarRow Icon={ClockIcon} title="Memories"/>
-            <SidebarRow Icon={ChevronDownICon} title="See More"/>
+            <SidebarRow Icon={ChevronDownIcon} title="See More"/>
             
         </div>
     );
